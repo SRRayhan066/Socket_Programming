@@ -53,7 +53,7 @@ class ClientHandler extends Thread {
                 // Broadcast the message to all connected clients
                 broadcast(message);
 
-                if (message.equalsIgnoreCase("_stop"))
+                if (message.equalsIgnoreCase("stop"))
                     break;
             }
 

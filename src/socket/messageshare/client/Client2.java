@@ -30,10 +30,9 @@ public class Client2 {
             serverListener.start();
 
             while (true) {
-                //System.out.print("input> ");
                 String message = "client2: " + scanner.nextLine();
                 dataOutputStream.writeUTF(message);
-                if (message.equalsIgnoreCase("_stop"))
+                if (message.equalsIgnoreCase("stop"))
                     break;
             }
         } catch (Exception e) {

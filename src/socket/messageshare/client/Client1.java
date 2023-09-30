@@ -33,7 +33,7 @@ public class Client1 {
                 //System.out.print("input> ");
                 String message = "client1: " + scanner.nextLine();
                 dataOutputStream.writeUTF(message);
-                if (message.equalsIgnoreCase("_stop"))
+                if (message.equalsIgnoreCase("stop"))
                     break;
             }
         } catch (Exception e) {
